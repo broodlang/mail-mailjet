@@ -8,5 +8,4 @@
   :description
     "Mailjet as a `mail` adapter — the Send API v3.1, with Mailjet's own error text on a refusal."
   :repository "https://github.com/broodlang/mail-mailjet"
-  ;; Pinned to a path until `mail` is on the registry; then `[mail :version "^0.1.0"]`.
-  :dependencies [[mail :path "../mail"]])
+  :dependencies [[mail :version "^0.1.0"]])
