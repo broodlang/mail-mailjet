@@ -1,0 +1,12 @@
+;; mail-mailjet — Mailjet as a `mail` adapter: one email, one `POST /v3.1/send`. The
+;; builder, validation and the delivery contract are `mail`'s; this package is the wire
+;; format and the reading of Mailjet's answer.
+(project
+  :name "mail-mailjet"
+  :version "0.1.0"
+  :brood ">= 0.29.2"
+  :description
+    "Mailjet as a `mail` adapter — the Send API v3.1, with Mailjet's own error text on a refusal."
+  :repository "https://github.com/broodlang/mail-mailjet"
+  ;; Pinned to a path until `mail` is on the registry; then `[mail :version "^0.1.0"]`.
+  :dependencies [[mail :path "../mail"]])
